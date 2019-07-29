@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 初始样式 */
+
+.home {
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+}
+
+.top_nav {
+  width: 1080px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logos {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon_zhubao {
+  width: 52px;
+  height: 52px;
+  background: no-repeat url(../assets/官网/首页/珠宝配饰.png);
+  background-size: contain;
+}
+
+.icon_mess {
+  font-size: 20px;
+  color: #0C3B96;
+  margin-left: 10px;
+}
+
+.top_list {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.top_list > li > .current{
+  font-weight: 600;
+}
+.top_list li {
+  margin: 0px 25px;
+  color: #1B3C9A;
+  font-size: 16px;
+  position: relative;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.top_list li:hover .dropdown_content {
+  display: block;
+}
+
+.content_arrow {
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: 46px;
+  border-color: #fff transparent transparent #fff;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, .06);
+  position: absolute;
+  border-style: solid;
+  border-width: 4px;
+  z-index: 1;
+}
+
+.dropdown_content {
+  position: absolute;
+  display: none;
+  width: 110px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(72, 80, 87, 0.5);
+  left: 50%;
+  top: 50px;
+  margin-left: -55px;
+  line-height: 42px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.dropdown_content a {
+  display: block;
+  color: #333333;
+}
+
+.dropdown_content a::after {
+  content: '';
+  display: block;
+  background: rgba(233, 233, 233, 1);
+  width: 84px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.dropdown_content a:nth-last-child(1):after {
+  background: transparent;
+}
+
+.arrow_down {
+  margin-left: 2px;
+  vertical-align: middle;
+  display: inline-block;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #0C3B96;
+}
+
+/* 顶部导航 */
+
+.banner {
+  background: no-repeat url(../assets/官网/首页/banner.jpeg);
+  background-size: contain;
+  width: 100%;
+  height: 410px;
+}
+
+/* 轮播图片 */
+
+.content {
+  width: 1080px;
+  margin: 30px auto;
+  display: flex;
+}
+
+.content>.left {
+  margin-right: 30px;
+  width: 350px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 10px 0px rgba(196, 211, 255, 0.54);
+  border-radius: 10px;
+}
+
+.content>.left>.search>h2 {
+  height: 50px;
+  background: #1b3c9a;
+  text-align: left;
+  border-radius: 10px 10px 0 0;
+}
+
+.content>.left>.search>h2>span {
+  font-size: 16px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 30px;
+}
+
+.content>.left>.search>h2>i {
+  display: inline-block;
+  background: no-repeat url(../assets/官网/首页/证书查询-白@2x.png);
+  background-size: contain;
+  width: 17px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 22px;
+}
+
+.content>.left>.search>p {
+  width: 270px;
+  height: 50px;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 17px;
+  margin-top: 68px;
+  margin-left: 40px;
+}
+
+.detail {
+  font-size: 14px;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.detail>input {
+  width: 200px;
+  height: 36px;
+  color: #B0B0B0;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(216, 216, 216, 1);
+  padding-left: 10px;
+}
+
+.content>.left>.search>.search_button {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.content>.left>.search>.search_button>button:nth-child(1) {
+  width: 84px;
+  height: 36px;
+  background-color: #0c3b96;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.content>.left>.search>.search_button>button:nth-child(2) {
+  width: 84px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid rgba(27, 60, 154, 1);
+  margin-left: 42px;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(27, 60, 154, 1);
+}
+
+.content>.right {
+  width: 700px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 10px 0px rgba(196, 211, 255, 0.54);
+  border-radius: 10px;
+}
+
+.content>.right>.news>h2 {
+  display: flex;
+  height: 50px;
+  background: #1b3c9a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.content>.right>.news>h2>span{
+  margin-left: 30px;
+}
+.content>.right>.news>h2>span>i {
+  display: inline-block;
+  background: no-repeat url(../assets/官网/首页/最新消息@2x.png);
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top:4px;
+  left:-10px;
+}
+
+.content>.right>.news>h2>a{
+  margin-left: 520px;
+}
+.content>.right>.news>h2>a>i {
+  display: inline-block;
+  background: no-repeat url(../assets/官网/首页/白-右箭头@2x.png);
+  background-size: contain;
+  width: 7px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+.content>.right>.news>.detail>.list>li {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  position: relative;
+  padding: 7px 0 7px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-left: 20px;
+}
+
+.content>.right>.news>.detail>.list>li>a {
+  color: #333;
+  padding-right: 252px;
+}
+
+.content>.right>.news>.detail>.list>li::before {
+  content: " ";
+  width: 4px;
+  height: 4px;
+  background: #1b3c9a;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 2px;
+}
+
+/* 证书查询和最新消息 */
+
+.friendShip {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.friendShip > .title{
+  display: flex;
+  justify-content: center;
+}
+.friendShip >.title > .link_l{
+  display: inline-block;
+  background:no-repeat url(../assets/官网/首页/链接-左@2x.png);
+  background-size: contain;
+  width:30px;
+  height:20px;
+  margin-right: 10px;
+  margin-top:7px;
+}
+.friendShip >.title > .link_r{
+  display: inline-block;
+  background:no-repeat url(../assets/官网/首页/链接-右@2x.png);
+  background-size: contain;
+  width:30px;
+  height:20px;
+  margin-left: 10px;
+  margin-top:7px;
+}
+
+.friendShip >.title >span {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.friendShip>p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+/* 友情链接 */
+
+.fotter {
+  width: 100%;
+  height: 154px;
+  background: rgba(39, 55, 77, 1);
+}

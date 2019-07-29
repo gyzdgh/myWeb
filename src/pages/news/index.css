@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 初始样式 */
+
+.news {
+    width: 100%;
+    background: #ffffff;
+}
+
+.top_nav {
+    width: 1080px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logos {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon_zhubao {
+    width: 52px;
+    height: 52px;
+    background: no-repeat url(../../assets/官网/首页/珠宝配饰.png);
+    background-size: contain;
+}
+
+.icon_mess {
+    font-size: 20px;
+    color: #0C3B96;
+    margin-left: 10px;
+}
+
+.top_list {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.top_list > li > .current{
+    font-weight: 600;
+}
+.top_list li {
+    margin: 0px 25px;
+    color: #1B3C9A;
+    font-size: 16px;
+    position: relative;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.top_list li:hover .dropdown_content {
+    display: block;
+}
+
+.content_arrow {
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    top: 46px;
+    border-color: #fff transparent transparent #fff;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .06);
+    position: absolute;
+    border-style: solid;
+    border-width: 4px;
+    z-index: 1;
+}
+
+.dropdown_content {
+    position: absolute;
+    display: none;
+    width: 110px;
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(72, 80, 87, 0.5);
+    left: 50%;
+    top: 50px;
+    margin-left: -55px;
+    line-height: 42px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.dropdown_content a {
+    display: block;
+    color: #333333;
+}
+
+.dropdown_content a::after {
+    content: '';
+    display: block;
+    background: rgba(233, 233, 233, 1);
+    width: 84px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.dropdown_content a:nth-last-child(1):after {
+    background: transparent;
+}
+
+.arrow_down {
+    margin-left: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #0C3B96;
+}
+
+/* 顶部导航 */
+
+.main {
+    width: 100%;
+    background: #F3F5F9;
+    padding-bottom: 50px;
+}
+
+.banner {
+    background: no-repeat url(../../assets/官网/banner/新闻动态banner@2x.png);
+    background-size: contain;
+    width: 1080px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1080px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.line {
+    height: 15px;
+}
+
+.main>.container>section>aside {
+    width: 160px;
+    float: left;
+}
+
+.side_menu {
+    border-right: 1px solid #EEEEEE;
+    height: 480px;
+}
+
+.side_menu>.menu_title {
+    margin-top: 1px;
+    margin-left: -50px;
+}
+
+.side_menu>.menu_title>i {
+    display: inline-block;
+    background: no-repeat url(../../assets/官网/符号-新闻-线性@2x.png);
+    background-size: contain;
+    width: 19px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.side_menu>.menu_title>span {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 600;
+}
+
+.side_menu>.menu_list {
+    margin-top: 8px;
+}
+
+.side_menu>.menu_list>li {
+    padding: 13px 62px 11px 28px;
+    font-size: 13px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.side_menu>.menu_list>.current {
+    color: #1B3C9A;
+    border-right: 2px solid #1B3C9A;
+}
+
+/* side列表 */
+
+.main>.container>section>.detail>.title {
+    color: #666;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 190px;
+    margin-right: 28px;
+    font-weight: 600;
+}
+
+.main>.container>section>.detail>.content>.content_list {
+    padding-bottom: 90px;
+}
+
+.main>.container>section>.detail>.content>.content_list>li {
+    display: flex;
+    font-size: 14px;
+    color: #333333;
+    align-items: center;
+    padding-left: 46px;
+    position: relative;
+    margin: 16px 0;
+}
+.main>.container>section>.detail>.content>.content_list>li>a{
+    text-align: left;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    margin-right: 50px;
+}
+
+.main>.container>section>.detail>.content>.content_list>li::before {
+    content: " ";
+    width: 4px;
+    height: 4px;
+    background: #1b3c9a;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    position: absolute;
+    left: 30px;
+}
+
+.main>.container>section>.detail>.content>.content_list>li>span {
+    margin-right: 30px;
+}
+
+/* 新闻列表页面 */
+
+.main>.container>section>.detail>.content>.error{
+    height:355px;
+}
+
+.main>.container>section>.detail>.content>.error>i{
+    display: block;
+    background:no-repeat url(../../assets/官网/空状态@2x.png);
+    background-size: contain;
+    width:160px;
+    height:132px;
+    margin-left: 541px;
+    margin-top:110px;
+    margin-bottom: 19px;
+    border:1px dashed  #888888;
+}
+
+.main>.container>section>.detail>.content>.error>span{
+    font-size: 14px;
+    color:#999999;
+}
+
+/* 未找到资源页面 */
+
+/* 主体内容 */
+
+.fotter {
+    width: 100%;
+    height: 154px;
+    background: rgba(39, 55, 77, 1);
+}
