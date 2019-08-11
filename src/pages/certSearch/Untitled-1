@@ -1,0 +1,30 @@
+import React from 'react'
+import axios from 'axios'
+
+
+export default class XXX extends React.PureComponent {
+    state={
+        id: '',
+        data: [],
+    }
+
+    componentDidMount(){
+        this.fetchData()
+    }
+
+    fetchData = ()=>{
+        axios.get('http://yapi.demo.qunar.com/mock/84959/admin/getOrder?type=1')
+        .then(function (response) {
+            this.setState({data:response.data.list})
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+
+
+    render(){
+        const { id, data } = this.state
+        return <div>{id}</div>
+    }
+}

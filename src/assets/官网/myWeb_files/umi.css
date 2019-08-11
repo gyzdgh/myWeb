@@ -1,0 +1,40 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+
+.umi-NotFound-wrapper {
+  font-size: 18px;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  text-align: left;
+}
+.umi-NotFound-wrapper code {
+  background: #7898f3;
+}
+.umi-NotFound-wrapper h1 {
+  font-size: 40px;
+  background: #78f191;
+  margin-bottom: 30px;
+}
+.umi-NotFound-wrapper h2 {
+  color: #c803fd;
+  font-size: 22px;
+  margin-top: 40px;
+}
+.umi-NotFound-wrapper ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+}
+
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+
+/*# sourceMappingURL=umi.css.map*/

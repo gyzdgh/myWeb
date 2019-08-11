@@ -1,0 +1,52 @@
+/* 初始样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 按钮 */
+
+.popup{
+    background-color: #888888;
+    height:100%;
+}
+.button{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.popup_detail{
+    width:6.3rem;
+    height:8.63rem;
+    background:rgba(255,255,255,1);
+    border-radius:8px;
+    margin:30px auto;
+    padding-top:16px;
+}
+.banner{
+    width:5.98rem;
+    height:5.74rem;
+    background-color:#333;
+    margin:0 auto;
+}
+
+.logo{
+    background:no-repeat url(../../../assets/zhibo.png);
+    width:3.31rem;
+    height:1.12rem;
+}
+
+.mess{
+    margin:16px 16px;
+}

@@ -6,31 +6,46 @@ import { Data } from '../data'
 
 export default class Index extends React.PureComponent {
   state = {
-    data: []
+    searchValue:'',
+    data:Data,
+    result:{},
+    empty:false
   }
   
   handleCertNoChange = (e) => {
     this.setState({
-      certNo: e.target.value,
+      searchValue: e.target.value
     })
   }
 
   handleSearch = () => {
-    const { certNo } = this.state.data.certNo.value
-    if (!certNo) {
-
-      return
+    const { searchValue } = this.state
+    let empty=true
+    let result={}
+    if (searchValue) {
+      this.state.data.map(item=>{
+        if(searchValue === item.certNo){
+          empty=false
+          result=item
+        }
+      })
+      this.setState({
+        empty:empty,
+        result:result
+      })
     }
   }
 
   handleReset = () => {
     this.setState({
-      certNo: '',
+      searchValue: '',
+      result:{},
+      empty:false
     })
   }
 
   render() {
-    const { certNo } = this.state
+    const { searchValue, result,empty } = this.state
     return (
       <div className={styles.certSearch}>
         <div className={styles.top_nav}>
@@ -123,7 +138,7 @@ export default class Index extends React.PureComponent {
                     {/* 证书查询页面 start*/}
                     <div className={styles.search_detail}>
                       证书编号: &nbsp;&nbsp;
-                        <input value={certNo} placeholder="请输入证书编号" type="text" onChange={this.handleCertNoChange}/>
+                        <input value={searchValue} placeholder="请输入证书编号" type="text" onChange={this.handleCertNoChange}/>
                     </div>
                     <div className={styles.search_button}>
                       <button type="primary" onClick={this.handleSearch}>查询</button>
@@ -132,13 +147,13 @@ export default class Index extends React.PureComponent {
                     <p>温馨提示：若您未查询到结果，可能数据正在上传，请过两天再次查询。给您带来不便，敬请见谅！</p>
                     {/* 证书查询页面 end*/}
                     {/*证书信息页面  start*/}
-                    <div className={styles.cert_mess}>
+                    <div className={styles.cert_mess} style={{display:result.certNo?'':'none'}}>
                       <ul className={styles.mess_list}>
                         <li>
-                          <span>鉴定结果</span><span>和田玉&emsp;&emsp;</span>
+                          <span>鉴定结果</span><span>{result.Conclusion}&emsp;&emsp;</span>
                         </li>
                         <li>
-                          <span>总重量&emsp;</span><span>88.8&emsp;&emsp;&emsp;</span>
+                          <span>总重量&emsp;</span><span>{result.Weight}&emsp;&emsp;&emsp;</span>
                         </li>
                         <li>
                           <span>主石名称</span><span>花雕&emsp;&emsp;&emsp;</span>
@@ -147,7 +162,7 @@ export default class Index extends React.PureComponent {
                           <span>颜色&emsp;&emsp;</span><span>青黄&emsp;&emsp;&emsp;</span>
                         </li>
                         <li>
-                          <span>折射率&emsp;</span><span>1.62&emsp;&emsp;&emsp;</span>
+                          <span>折射率&emsp;</span><span>{result.Refractive}&emsp;&emsp;&emsp;</span>
                         </li>
                         <li>
                           <span>密度&emsp;&emsp;</span><span>因串未测&emsp;</span>
@@ -185,11 +200,16 @@ export default class Index extends React.PureComponent {
                     </div>
                     {/*证书信息页面  end*/}
                     {/* 未找到资源页面start */}
-                    <div className={styles.error} style={{ display: 'none' }}>
-                      <i></i>
-                      <span>没有查询到证书信息，请核对编号输入是否有误！</span>
-                      <button>重新查询</button>
-                    </div>
+                    {
+                      empty && (
+                      <div className={styles.error}>
+                        <i></i>
+                        <span>没有查询到证书信息，请核对编号输入是否有误！</span>
+                        <button>重新查询</button>
+                      </div>
+                      )
+                    }
+                   
                     {/* 未找到资源页面end */}
                   </div>
                 </div>

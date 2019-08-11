@@ -1,0 +1,174 @@
+/* 初始样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PingFangSC-Semibold;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头部样式 */
+
+.top {
+    position: relative;
+}
+
+.top_mess {
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    width: 4.72rem;
+    height: 0.49rem;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.top_mess>.avatar {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.top_mess>p {
+    font-size: 0.28rem;
+    color: #fff;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+
+.top_banner {
+    background: no-repeat url(../../../assets/七夕切图/banner_price.jpg);
+    background-size: contain;
+    width: 7.5rem;
+    height: 3rem;
+}
+
+/* 精品列表 */
+
+.boutique_list {
+    display: flex;
+}
+
+.default {
+    font-size: 0.3rem;
+    color: #333333;
+    padding: 23px 95px 25px 95px;
+}
+
+.price {
+    font-size: 0.3rem;
+    color: #EF525E;
+    padding: 23px 95px 25px 95px;
+    position: relative;
+}
+
+.price>.arrow {
+    position: absolute;
+    top: 35px;
+    right: 75px;
+}
+
+.price>.arrow>.on {
+    background: no-repeat url(../../../assets/七夕切图/Triangle.png);
+    background-size: contain;
+    width: 0.1rem;
+    height: 0.08rem;
+    border: 1px dashed #888888;
+}
+
+.price>.arrow>.under {
+    background: no-repeat url(../../../assets/七夕切图/TriangleCopy.png);
+    background-size: contain;
+    width: 0.1rem;
+    height: 0.08rem;
+    border: 1px dashed #888888;
+}
+
+.sort {
+    font-size: 0.3rem;
+    color: #333333;
+    padding: 23px 95px 25px 95px;
+}
+
+.triangle_down {
+    width: 0;
+    height: 0;
+    border-left: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
+    border-top: 0.1rem solid #333333;
+    position:relative;
+    top: -25px;
+    left: 70px;
+}
+
+/* 精品内容 */
+
+.boutique_content{
+    background-color: #3D2E73;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.piece{
+    width:3.36rem;
+    border-radius:15px;
+    background-color: #ffffff;
+    margin: 20px -8px 20px 28px;
+}
+
+.piece_mess{
+    display: flex;
+    flex-direction: column;
+}
+.mask{
+    width:3.36rem;
+    height:3.36rem;
+    background-color:#333;
+}
+
+.title{
+    font-size: 0.28rem;
+    color:#333333;
+    margin-top:8px;
+    margin-left: 20px;
+    margin-right: 22px;
+}
+
+.boutique_money{
+    font-size: 0.28rem;
+    color:#AB3B3A;
+    text-align: left;
+    margin-left: 20px;
+    margin-top:10px;
+}
+
+.fire{
+    background: no-repeat url(../../../assets/七夕切图/fire.png);
+    background-size: contain;
+    width:0.19rem;
+    height:0.24rem;
+    margin-left: 106px;
+    padding-left: 8px;
+    margin-top:5px;
+    position: relative;
+    top: -38px;
+    left: 130px;
+}   
+.fire> div{
+    font-size: 0.26rem;
+    color:#999999;
+    margin-left: 18px;
+}
+

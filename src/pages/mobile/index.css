@@ -1,0 +1,95 @@
+
+/* 初始样式 */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 头部样式 */
+
+.top{
+    position: relative;
+}
+.top_mess{
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    width:4.72rem;
+    height:0.49rem;
+    position: absolute;
+    top:15px;
+    left:25px;
+}
+.top_mess>.avatar{
+    width:0.4rem;
+    height:0.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top:5px;
+    margin-left:10px;
+}
+
+.top_mess>p{
+    font-size: 0.28rem;
+    color:#fff;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+
+.top_banner{
+    background:no-repeat url(../../assets/七夕切图/home_banner.jpg);
+    background-size: contain;
+    width:7.5rem;
+    height:5.5rem;
+}
+
+/* 活动页面 */
+
+.active{
+    margin-top:-15px;
+}
+.active_mess{
+    display: flex;
+}
+
+.limited{
+    background:no-repeat url(../../assets/七夕切图/home_icon_seckill.jpg);
+    background-size: contain;
+    width:2rem;
+    height:2rem;
+}
+
+.boutique{
+    background:no-repeat url(../../assets/七夕切图/home_icon_price.jpg);
+    background-size: contain;
+    width:2rem;
+    height:2rem;
+}
+
+.coupon{
+    background:no-repeat url(../../assets/七夕切图/home_icon_coupon.jpg);
+    background-size: contain;
+    width:2rem;
+    height:2rem;
+}
+
+.active_content{
+
+}
+
+.skillful{
+
+}
+
+.tanabata{
+
+}

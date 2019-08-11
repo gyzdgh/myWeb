@@ -14,7 +14,6 @@ import { Data } from '../data'
     fetchList = ()=>{
       this.setState({data:Data})
     }
-    
     render(){
       return (
         <div className={styles.news}>

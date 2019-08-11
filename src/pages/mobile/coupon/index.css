@@ -1,0 +1,280 @@
+/* 初始样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PingFangSC-Semibold;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头部样式 */
+
+.top {
+    position: relative;
+}
+
+.top_mess {
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    width: 4.72rem;
+    height: 0.49rem;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.top_mess>.avatar {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.top_mess>p {
+    font-size: 0.28rem;
+    color: #fff;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+
+.top_banner {
+    background: no-repeat url(../../../assets/七夕切图/banner_coupon.jpg);
+    background-size: contain;
+    width: 7.5rem;
+    height: 3rem;
+}
+
+/* 内容列表 */
+
+.coupon_list{
+    font-size: 0.3rem;
+    color:#333333;
+    display: flex;
+}
+
+.store{
+    margin:22px 20px 26px 20px;
+}
+
+.purple{
+    margin:22px 18px 26px 18px;
+}
+
+.craft{
+    margin:22px 18px 26px 18px;
+}
+
+.wenwan{
+    margin:22px 18px 26px 18px;
+
+}
+
+.tea{
+    margin:22px 18px 26px 44px;
+    position: relative;
+}
+
+.current{
+    color:#EF525E;
+    position: relative;
+}
+.current::after{
+    display: block;
+    content:'';
+    width:55px;
+    height:5px;
+    background-color: #EF525E;
+    position: absolute;
+    bottom:-10px;
+    left:33px;
+    border-radius: 5px;
+}
+.mask{
+    background:no-repeat url(../../../assets/七夕切图/Rectangle.png);
+    width:0.47rem;
+    height:0.9rem;
+    position:absolute;
+    top:-21px;
+    right: -19px;
+    border:1px dashed #888888;
+}
+
+/* 证劵内容 */
+
+.coupon_content{
+    background-color: #3D2E73;
+}
+
+.coupon_detail{
+    padding:0 21px 20px 23px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coupon_banner{
+    background:no-repeat url(../../../assets/七夕切图/pic_coupon.png);
+    width:7.06rem;
+    height:1.6rem;
+    border:1px dashed #888888;
+    position: relative;
+    margin-top:20px;
+}    
+
+.pic{
+    width:0.84rem;
+    height:0.84rem;
+    background:rgba(139,139,139,1);
+    border:2px solid rgba(255,255,255,1);
+    border-radius: 50%;
+    margin-top:38px;
+    margin-left: 20px;
+}
+
+.grade{
+    width:0.76rem;
+    height:0.32rem;
+    background:linear-gradient(90deg,rgba(160,39,49,1) 0%,rgba(211,47,47,1) 100%);
+    border-radius:0.17rem;
+    position: absolute;
+    top:20px;
+    left:124px; 
+    
+}
+
+.grade_logo{
+    width:0.24rem;
+    height:0.23rem;
+    background:rgba(0,0,0,0.2);
+    border-radius: 50%;
+    margin-top:4px;
+    margin-left: 4px;
+    padding-top:6px;
+    padding-left: 5px;
+}
+
+.grade_pic{
+    background:no-repeat url(../../../assets/七夕切图/dun.png);
+    background-size:contain;
+    width:12px;
+    height:14px;
+}
+.nums{
+    margin-top: -106px;
+    margin-left: 25px;
+}
+
+.v{
+    font-size: 0.3rem;
+    color:#FFFFFF
+}
+
+.num{
+    font-size: 0.14rem;
+    color:#FFFFFF;
+}
+
+.grade_title{
+    display: block;
+    font-family:PingFangSC-Regular;
+    font-size: 0.28rem;
+    color:#FFFFFF;
+    margin-left: 30px;
+    position: absolute;
+    top:15px;
+    left:180px;
+} 
+.coupon_mess{
+    position: absolute;
+    top:10px;
+    left: 125px;
+}
+
+.coupon_mess > a{
+    font-size: 0.4rem;
+    color:#FFFFFF;
+}
+
+.coupon_mess>span{
+    font-size: 0.24rem;
+    color:#FFFFFF;
+    font-family:PingFangSC-Regular;
+    margin-left: 16px;
+}
+.get{
+    width:1rem;
+    position: absolute;
+    top: -45px;
+    right: 3px;
+}
+
+.get>span{
+    font-size: 0.4rem;
+    color:#5241AC;
+}
+.get>span:nth-child(2){
+    margin-top:-15px;
+    display: block;
+}
+
+.coupon_messfull{
+    display: flex;
+    font-size: 12px;
+    position: absolute;
+    bottom:19px;
+    left:100px;
+}
+
+.coupon_messfull>div{
+    margin-left: 14px;
+    margin-right: 15px;
+    position: relative;
+}
+.coupon_messfull>div>.fulfil>i{
+    display: block;
+    width: 1px;
+    height: 70px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 2px;
+    left: 150px;
+}
+
+.coupon_messfull>div:last-child i{
+    display: none;
+}
+.coupon_messfull>div>.money{
+    font-size: 0.33rem;
+    color:#FFFFFF;
+}
+
+.coupon_messfull>div>.fulfil{
+    font-size: 0.22rem;
+    color:#FFFFFF;
+}
+
+.received{
+    border:1px dashed #888888;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.received_pic{
+    background:no-repeat url(../../../assets/七夕切图/已领取.png);
+    background-size: contain;
+    width:1rem;
+    height:1rem;
+    position: relative;
+    top:15px;
+}

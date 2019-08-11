@@ -1,0 +1,162 @@
+
+/* 初始样式 */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:PingFangSC-Regular;
+}
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 导航 */
+
+.index__order___2SSCs{
+    width:7.5rem;
+    margin:10px auto;
+    background:rgba(244,246,246,1);
+}
+.index__order___2SSCs>.index__top___2pLDa{
+    font-size: 0.3rem;
+    background-color: #ffffff;
+}
+.index__order___2SSCs>.index__top___2pLDa>ul{
+    display: flex;
+}
+.index__order___2SSCs>.index__top___2pLDa>ul>li{
+    flex: 1 1;
+    height:0.9rem;
+    line-height: .9rem;
+    position: relative;
+}
+
+.index__order___2SSCs>.index__top___2pLDa>ul>.index__deal___qXo0w>a{
+    color:#999999;
+    cursor: pointer;
+}
+
+.index__order___2SSCs>.index__top___2pLDa>ul>.index__goods___2PF_N>a{
+    color:#AB3B3A;
+    cursor: pointer;
+}
+.index__order___2SSCs>.index__top___2pLDa>ul>.index__goods___2PF_N>a::after{
+    display: block;
+    content:'';
+    width: 60px;
+    height: 2px;
+    background-color: #AB3B3A;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left:-30px;
+}
+
+.index__clearBoth___2Tv5L{
+    clear: both;
+}
+
+/* 商品列表 */
+.index__product___34fKY{
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.index__product_title___1fxsN{
+    display: flex;
+    position: relative;
+}
+.index__product_title___1fxsN>.index__pay_over___1AYgf,
+.index__product_title___1fxsN>.index__pay_fail___2Grtx{
+    color:#999999;
+}
+.index__product_title___1fxsN>span{
+    font-size: .28rem;
+    color:#333333;
+    margin-top:12px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.index__product_title___1fxsN>a{
+    font-size: .28rem;
+    color:#AB3B3A;
+    margin-top:12px;
+    margin-bottom: 12px;
+    position: absolute;
+    right:.3rem;
+}
+
+.index__product_content___1J5Yi{
+    display: flex;
+    border-top:1px solid #E4E5E7;
+    border-bottom:1px solid #E4E5E7;
+}
+.index__product_content___1J5Yi>i{
+    display: inline-block;
+    background:no-repeat url(/static/珠宝配饰.1e9f17a2.png);
+    background-size: contain;
+    width:100px;
+    height:100px;
+    border-radius: 5px;
+    margin-left: 105px;
+    margin-top:12px;
+    margin-bottom: 12px;
+}
+
+.index__content_mess___1xthg{
+    margin-top:12px;
+    margin-left: 20px;
+}
+.index__content_mess___1xthg>ul>li{
+    text-align: left;
+}
+.index__content_mess___1xthg .index__mess_title___3BVal{
+    display: inline-block;
+    color:#333333;
+    font-size: .28px;
+    margin-bottom: 10px;
+}
+.index__content_mess___1xthg .index__mess_time___2bVSX{
+    color:#AB3B3A;
+    font-size:13px;
+}
+.index__content_mess___1xthg > ul>li>span{
+    color:#999999;
+    font-size: 13px;
+}
+
+/* 支付信息 */
+
+.index__pay___1KiKj{
+    float: right;
+}
+.index__pay___1KiKj>.index__logistics___3mLPQ{
+    color:#333333;
+    font-size: 15px;
+    border-radius:8px;
+    border:2px solid #999999;
+    padding:5px 15px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.index__pay___1KiKj>.index__pay_for___2aMZX{
+    color:#AB3B3A;
+    font-size: 15px;
+    border-radius:8px;
+    border:2px solid rgba(171,59,58,1);
+    padding:5px 15px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+/*# sourceMappingURL=p__order__index.chunk.css.map*/

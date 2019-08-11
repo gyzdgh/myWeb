@@ -1,0 +1,94 @@
+/* 初始样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #F0F2F5;
+}
+
+/* 顶部样式 */
+
+.staff{
+    width:1136px;
+    height:673px;
+    background:rgba(255,255,255,1);
+    margin:24px auto;
+}
+
+.top{
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    padding-top:25px;
+    padding-bottom: 17px;
+}
+/* .top .department Select::placeholder {
+    color: red;
+}   */
+
+.department{
+    margin-left: 27px;
+}
+
+.department > lable{
+    margin-right: 4px;
+}
+
+.status{
+    margin-left: 11px;
+}
+
+.status > lable{
+    margin-right: 4px;
+}
+
+.worker_name{
+    margin-left: 18px;
+}
+
+.worker_name > lable{
+    margin-right: 8px;
+}
+.button{
+    margin-left: 44px;
+}
+
+.button button{
+    width:62px;
+    height:34px;
+}
+
+.reast{
+    margin-left: 12px;
+}
+
+/* 内容列表 */
+
+.main{
+    width:1088px;
+    border:1px solid #E9E9E9;
+    margin-left: 24px;
+    border-radius: 3px;
+}
+
+
+/* 底部分页 */
+
+.page{
+    margin-top:16px;
+    padding-right: 24px;
+    text-align: right;
+}
+
+

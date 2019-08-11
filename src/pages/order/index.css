@@ -1,0 +1,156 @@
+
+/* 初始样式 */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:PingFangSC-Regular;
+}
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 导航 */
+
+body{
+    font-size: 12px;
+}
+.order{
+    width:7.5rem;
+    margin:10px auto;
+    background:rgba(244,246,246,1);
+}
+.order>.top{
+    font-size: 0.3rem;
+    background-color: #ffffff;
+}
+.order>.top>ul{
+    display: flex;
+}
+.order>.top>ul>li{
+    flex: 1;
+    height:0.9rem;
+    line-height: .9rem;
+    position: relative;
+}
+
+.order>.top>ul>.deal>a{
+    color:#999999;
+    cursor: pointer;
+}
+
+.order>.top>ul>.goods>a{
+    color:#AB3B3A;
+    cursor: pointer;
+}
+.order>.top>ul>.goods>a::after{
+    display: block;
+    content:'';
+    width: 60px;
+    height: 2px;
+    background-color: #AB3B3A;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left:-30px;
+}
+
+.clearBoth{
+    clear: both;
+}
+
+/* 商品列表 */
+.product{
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.product_title{
+    display: flex;
+    position: relative;
+    padding:24px 30px 24px 20px;
+}
+.product_title>.pay_over,
+.product_title>.pay_fail{
+    color:#999999;
+}
+.product_title>span{
+    font-size: .28rem;
+    color:#333333;
+    flex: 1;
+    text-align: left;
+}
+
+.product_title>a{
+    font-size: .28rem;
+    color:#AB3B3A;
+}
+
+.product_content{
+    display: flex;
+    border-top:1px solid #E4E5E7;
+    border-bottom:1px solid #E4E5E7;
+}
+.product_content>i{
+    display: inline-block;
+    background:no-repeat url(../../assets/官网/首页/珠宝配饰.png);
+    background-size: contain;
+    width:180px;
+    height:180px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top:24px;
+    margin-bottom: 24px;
+}
+
+.content_mess{
+    margin-top:24px;
+    margin-left: 20px;
+}
+.content_mess>ul>li{
+    text-align: left;
+}
+.content_mess .mess_title{
+    display: inline-block;
+    color:#333333;
+    font-size: .32rem;
+    margin-bottom: 24px;
+}
+.content_mess .mess_time{
+    color:#AB3B3A;
+    font-size:.26rem;
+}
+.content_mess > ul>li>span{
+    color:#999999;
+    font-size: .26rem;
+}
+
+/* 支付信息 */
+
+.pay{
+    float: right;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.pay>.logistics{
+    color:#333333;
+    font-size: .26rem;
+    border-radius:8px;
+    border:2px solid #999999;
+    padding:5px 15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.pay>.pay_for{
+    color:#AB3B3A;
+    font-size: .26rem;
+    border-radius:8px;
+    border:2px solid rgba(171,59,58,1);
+    padding:5px 15px;
+    cursor: pointer;
+    margin-right: 30px;
+}

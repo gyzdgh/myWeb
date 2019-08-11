@@ -1,0 +1,229 @@
+/* 初始样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头部样式 */
+
+.top {
+    position: relative;
+}
+
+.top_mess {
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    width: 4.72rem;
+    height: 0.49rem;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.top_mess>.avatar {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.top_mess>p {
+    font-size: 0.28rem;
+    color: #fff;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+
+.top_banner {
+    background: no-repeat url(../../../assets/七夕切图/banner_seckill.jpg);
+    background-size: contain;
+    width: 7.5rem;
+    height: 3rem;
+}
+
+/* 倒计时 */
+
+.countdown{
+    display: flex;
+}
+
+.countdown>div{
+    width:1.5rem;
+    height:1rem;
+}
+
+.countdown .current{
+    background:linear-gradient(180deg,rgba(245,117,120,1) 0%,rgba(206,65,80,1) 100%);
+    color:#fff;
+}
+.countdown>div .countdown_time{
+    font-size: 0.32rem;
+    color:#333333;
+    font-family:PingFangSC-Semibold;
+    margin-top:8px;
+}
+
+.countdown>div .countdown_mess{
+    font-size: 0.24rem;
+    color:#333333;
+    font-family:PingFangSC-Regular;
+}
+
+/* 抢购内容 */
+
+.panic{
+    background-color: #3D2E73;
+}
+
+/* 抢购内容top */
+.panic_top{
+    padding-top:34px;
+    padding-bottom: 34px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.panic_title{
+    background:no-repeat url(../../../assets/七夕切图/分组\ 4.png);
+    background-size: contain;
+    width:2.65rem;
+    height:0.33rem;
+    border:1px dashed #ffffff;
+}
+
+.panic_countdown{
+    display: flex;
+    margin-left: 129px;
+}
+
+.clock{
+    background:no-repeat url(../../../assets/七夕切图/clock.png);
+    background-size: contain;
+    width:0.36rem;
+    height:0.36rem;
+    margin-right: 6px;
+    border:1px dashed #ffffff;
+}
+
+.clock_time{
+    font-size: 0.24rem;
+    color:#FFFFFF;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+}
+
+.clock_time > a{
+    font-size: 0.26rem;
+    color:#C92221;
+    margin:0 12px;
+    background-color:#ffffff;
+    padding:0 6px;
+    border-radius: 10px;
+}
+
+/* 抢购内容列表 */
+
+.panic_list{
+    width:7.1rem;
+    height:10rem;
+    border-radius:16px 16px 0px 0px;
+    background:#ffffff;
+    margin:0 auto;
+   
+    font-family:PingFangSC-Regular;
+}
+.list_content{
+    display: flex;
+    padding:30px 30px;
+    border-bottom:1px solid #ccc;
+}
+
+.list_pic{
+    background:no-repeat url(../../../assets/七夕切图/印章.png);
+    background-size: contain;
+    width:2rem;
+    height:2rem;
+}
+
+.list_mess{
+    margin-left: 30px;
+}
+
+.list_messTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.list_messTitle>a{
+    font-size: 0.3rem;
+    color:#222222;
+}
+.list_messTitle>span{
+    font-size: 0.26rem;
+    color:#999999;
+    margin-top:8px;
+}
+.list_messContent{
+    display: flex;
+    margin-top:64px;
+}
+
+.list_messContent>a:nth-child(1){
+    font-size: 0.3rem;
+    color:#911115;
+}
+.fire{
+    background: no-repeat url(../../../assets/七夕切图/fire.png);
+    background-size: contain;
+    width:0.19rem;
+    height:0.24rem;
+    margin-left: 106px;
+    padding-left: 8px;
+    margin-top:5px;
+}   
+.fire> div{
+    font-size: 0.26rem;
+    color:#999999;
+    margin-left: 18px;
+}
+
+.button{
+    display: inline-block;
+    font-size: 0.24rem;
+    color:#FFFFFF;
+    background-color:#F46201;
+    border-radius: 4px;
+    padding:8px 22px 8px 23px;
+    margin-left: 100px;
+}
+
+/* 已抢光 */
+
+.light{
+    background-color:#3D2E73;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    padding:121px 0 440px 0;
+}
+
+.light_pic{
+    background:no-repeat url(../../../assets/七夕切图/pic_lootall.png);
+    background-size: contain;
+    width:2.26rem;
+    height:3.80rem;
+}
